@@ -90,3 +90,13 @@ def test_api_process_rejects_bad_type(monkeypatch):
     monkeypatch.setenv("GEMINI_API_KEY", "test")
     r = client.post("/api/process", files={"files": ("a.exe", b"x", "application/octet-stream")})
     assert r.status_code == 415
+
+
+def test_csv_exports_neutralise_formulas():
+    from gst_agent.pipeline import issues_csv, reconciliation_csv
+    report = sample_report()
+    report["invoices"][0]["supplier_name"] = '=HYPERLINK("http://evil","x")'
+    report["reconciliation"]["rows"][0]["invoice_number"] = "@SUM(A1)"
+    assert "'=HYPERLINK" in issues_csv(report)
+    assert "'@SUM(A1)" in reconciliation_csv(report)
+    assert ",18172.0," in issues_csv(report)  # numbers untouched

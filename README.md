@@ -110,7 +110,7 @@ GEMINI_API_KEY=... python evaluate.py
 pytest
 ```
 
-There are 30 tests: real GSTINs, each GST rule, all reconciliation statuses, the full sample batch
+There are 31 tests: real GSTINs, each GST rule, all reconciliation statuses, the full sample batch
 end to end, Gemini extraction with a fake API, and the web API, including upload filename sanitisation.
 CI runs them on every push.
 

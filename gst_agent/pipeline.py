@@ -57,6 +57,11 @@ def run(files: list[Path], our_gstin: str | None = None, gstr2b_csv: str | None 
     return report
 
 
+def cell(v):
+    """Invoice text is untrusted: stop Excel/Sheets running e.g. '=HYPERLINK(...)' as a formula."""
+    return "'" + v if isinstance(v, str) and v[:1] in ("=", "+", "-", "@", "\t", "\r") else v
+
+
 def issues_csv(report: dict) -> str:
     out = io.StringIO()
     w = csv.writer(out)
@@ -64,9 +69,10 @@ def issues_csv(report: dict) -> str:
                 "cgst", "sgst", "igst", "total", "status", "issues"])
     for inv in report["invoices"]:
         t = inv.get("totals") or {}
-        w.writerow([inv["source"], inv.get("supplier_name"), inv.get("supplier_gstin"), inv.get("invoice_number"),
-                    inv.get("invoice_date"), t.get("taxable_value"), t.get("cgst"), t.get("sgst"), t.get("igst"),
-                    t.get("total"), inv["status"], " | ".join(i["message"] for i in inv["issues"])])
+        w.writerow([cell(v) for v in [
+            inv["source"], inv.get("supplier_name"), inv.get("supplier_gstin"), inv.get("invoice_number"),
+            inv.get("invoice_date"), t.get("taxable_value"), t.get("cgst"), t.get("sgst"), t.get("igst"),
+            t.get("total"), inv["status"], " | ".join(i["message"] for i in inv["issues"])]])
     return out.getvalue()
 
 
@@ -76,5 +82,5 @@ def reconciliation_csv(report: dict) -> str:
             "itc_at_risk", "action"]
     w = csv.DictWriter(out, cols, extrasaction="ignore")
     w.writeheader()
-    w.writerows(report.get("reconciliation", {}).get("rows", []))
+    w.writerows({k: cell(v) for k, v in r.items()} for r in report.get("reconciliation", {}).get("rows", []))
     return out.getvalue()
