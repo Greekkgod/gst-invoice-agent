@@ -1,0 +1,27 @@
+{
+  "supplier_name": "Konkan Logistics",
+  "supplier_gstin": "27AAJFK1290L1Z0",
+  "buyer_name": "Nilgiri Home Goods (Pune)",
+  "buyer_gstin": "27AABCN4821K2ZD",
+  "invoice_number": "KL-55120",
+  "invoice_date": "2026-10-21",
+  "place_of_supply_code": "27",
+  "line_items": [
+    {
+      "description": "Freight Bengaluru-Pune",
+      "hsn": "9965",
+      "quantity": 1,
+      "unit_price": 18500,
+      "taxable_value": 18500,
+      "gst_rate": 12
+    }
+  ],
+  "totals": {
+    "taxable_value": 18500.0,
+    "cgst": 1110.0,
+    "sgst": 1110.0,
+    "igst": 0.0,
+    "round_off": 0.0,
+    "total": 20720.0
+  }
+}

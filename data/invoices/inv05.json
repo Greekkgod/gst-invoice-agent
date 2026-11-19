@@ -1,0 +1,27 @@
+{
+  "supplier_name": "Yamuna Electricals Pvt Ltd",
+  "supplier_gstin": "07AACCY2267H1Z3",
+  "buyer_name": "Nilgiri Home Goods Pvt Ltd",
+  "buyer_gstin": "29AABCN4821K1ZA",
+  "invoice_number": "YE/0098",
+  "invoice_date": "2026-10-11",
+  "place_of_supply_code": "29",
+  "line_items": [
+    {
+      "description": "LED panel light 18W",
+      "hsn": "9405",
+      "quantity": 80,
+      "unit_price": 520,
+      "taxable_value": 41600,
+      "gst_rate": 18
+    }
+  ],
+  "totals": {
+    "taxable_value": 41600.0,
+    "cgst": 0.0,
+    "sgst": 0.0,
+    "igst": 7488.0,
+    "round_off": 0.0,
+    "total": 49088.0
+  }
+}

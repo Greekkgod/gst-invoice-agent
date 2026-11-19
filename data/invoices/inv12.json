@@ -1,0 +1,27 @@
+{
+  "supplier_name": "Sabarmati Ceramics",
+  "supplier_gstin": "24AAGFS6105D1ZM",
+  "buyer_name": "Nilgiri Home Goods Pvt Ltd",
+  "buyer_gstin": "29AABCN4821K1ZA",
+  "invoice_number": "SC-26-27-EXPORT-3398",
+  "invoice_date": "2026-10-25",
+  "place_of_supply_code": "29",
+  "line_items": [
+    {
+      "description": "Ceramic mugs set of 6",
+      "hsn": "6912",
+      "quantity": 120,
+      "unit_price": 540,
+      "taxable_value": 64800,
+      "gst_rate": 18
+    }
+  ],
+  "totals": {
+    "taxable_value": 64800.0,
+    "cgst": 0.0,
+    "sgst": 0.0,
+    "igst": 11664.0,
+    "round_off": 0.0,
+    "total": 76464.0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "supplier_name": "Kavery Packaging Industries",
+  "supplier_gstin": "29AAFCK3310P1Z9",
+  "buyer_name": "Nilgiri Home Goods Pvt Ltd",
+  "buyer_gstin": "29AABCN4821K1ZA",
+  "invoice_number": "KPI/2026/0451",
+  "invoice_date": "2026-10-13",
+  "place_of_supply_code": "29",
+  "line_items": [
+    {
+      "description": "Bubble wrap roll 1m x 100m",
+      "hsn": "3920",
+      "quantity": 25,
+      "unit_price": 1150,
+      "taxable_value": 28750,
+      "gst_rate": 18
+    }
+  ],
+  "totals": {
+    "taxable_value": 28750.0,
+    "cgst": 0.0,
+    "sgst": 0.0,
+    "igst": 5175.0,
+    "round_off": 0.0,
+    "total": 33925.0
+  }
+}

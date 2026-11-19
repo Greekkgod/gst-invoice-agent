@@ -1,0 +1,27 @@
+{
+  "supplier_name": "Kavery Packaging Industries",
+  "supplier_gstin": "29AAFCK3310P1Z9",
+  "buyer_name": "Nilgiri Home Goods Pvt Ltd",
+  "buyer_gstin": "29AABCN4821K1ZA",
+  "invoice_number": "KPI/2026/0412",
+  "invoice_date": "2026-10-03",
+  "place_of_supply_code": "29",
+  "line_items": [
+    {
+      "description": "Corrugated boxes 5-ply",
+      "hsn": "4819",
+      "quantity": 400,
+      "unit_price": 38.5,
+      "taxable_value": 15400.0,
+      "gst_rate": 18
+    }
+  ],
+  "totals": {
+    "taxable_value": 15400.0,
+    "cgst": 1386.0,
+    "sgst": 1386.0,
+    "igst": 0.0,
+    "round_off": 0.0,
+    "total": 18172.0
+  }
+}

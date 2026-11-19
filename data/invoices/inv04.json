@@ -1,0 +1,35 @@
+{
+  "supplier_name": "Malnad Office Supplies",
+  "supplier_gstin": "29AQLPM9043R1ZR",
+  "buyer_name": "Nilgiri Home Goods Pvt Ltd",
+  "buyer_gstin": "29AABCN4821K1ZA",
+  "invoice_number": "MOS-2290",
+  "invoice_date": "2026-10-09",
+  "place_of_supply_code": "29",
+  "line_items": [
+    {
+      "description": "A4 paper ream 75gsm",
+      "hsn": "4802",
+      "quantity": 60,
+      "unit_price": 285,
+      "taxable_value": 17100,
+      "gst_rate": 18
+    },
+    {
+      "description": "Printer toner cartridge",
+      "hsn": "8443",
+      "quantity": 4,
+      "unit_price": 3200,
+      "taxable_value": 12800,
+      "gst_rate": 18
+    }
+  ],
+  "totals": {
+    "taxable_value": 29900.0,
+    "cgst": 2691.0,
+    "sgst": 2691.0,
+    "igst": 0.0,
+    "round_off": 0.0,
+    "total": 35282.0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "supplier_name": "Sabarmati Ceramics",
+  "supplier_gstin": "24AAGFS6105D1ZM",
+  "buyer_name": "Nilgiri Home Goods Pvt Ltd",
+  "buyer_gstin": "29AABCN4821K1ZA",
+  "invoice_number": "SC-26-3341",
+  "invoice_date": "2026-10-15",
+  "place_of_supply_code": "29",
+  "line_items": [
+    {
+      "description": "Ceramic dinner set 24pc",
+      "hsn": "6912",
+      "quantity": 40,
+      "unit_price": 2150,
+      "taxable_value": 86000,
+      "gst_rate": 18
+    }
+  ],
+  "totals": {
+    "taxable_value": 86000.0,
+    "cgst": 0.0,
+    "sgst": 0.0,
+    "igst": 10320.0,
+    "round_off": 0.0,
+    "total": 96320.0
+  }
+}

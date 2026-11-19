@@ -1,0 +1,27 @@
+{
+  "supplier_name": "Coromandel Textiles",
+  "supplier_gstin": "33ABZPC5512M1ZD",
+  "buyer_name": "Nilgiri Home Goods Pvt Ltd",
+  "buyer_gstin": "29AABCN4821K1ZA",
+  "invoice_number": "CT/26-27/0931",
+  "invoice_date": "2026-10-07",
+  "place_of_supply_code": "29",
+  "line_items": [
+    {
+      "description": "Cotton bedsheet double",
+      "hsn": "6304",
+      "quantity": 150,
+      "unit_price": 640,
+      "taxable_value": 96000,
+      "gst_rate": 5
+    }
+  ],
+  "totals": {
+    "taxable_value": 96000.0,
+    "cgst": 0.0,
+    "sgst": 0.0,
+    "igst": 4800.0,
+    "round_off": 0.0,
+    "total": 100800.0
+  }
+}

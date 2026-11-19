@@ -1,0 +1,35 @@
+{
+  "supplier_name": "Yamuna Electricals Pvt Ltd",
+  "supplier_gstin": "07AACCY2287H1Z3",
+  "buyer_name": "Nilgiri Home Goods Pvt Ltd",
+  "buyer_gstin": "29AABCN4821K1ZA",
+  "invoice_number": "YE/0112",
+  "invoice_date": "2026-10-23",
+  "place_of_supply_code": "29",
+  "line_items": [
+    {
+      "description": "Ceiling fan 1200mm",
+      "hsn": "8414",
+      "quantity": 30,
+      "unit_price": 2350,
+      "taxable_value": 70500,
+      "gst_rate": 18
+    },
+    {
+      "description": "Jute doormat",
+      "hsn": "5702",
+      "quantity": 100,
+      "unit_price": 180,
+      "taxable_value": 18000,
+      "gst_rate": 5
+    }
+  ],
+  "totals": {
+    "taxable_value": 88500.0,
+    "cgst": 0.0,
+    "sgst": 0.0,
+    "igst": 13590.0,
+    "round_off": 0.0,
+    "total": 102090.0
+  }
+}

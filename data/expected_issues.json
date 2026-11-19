@@ -1,0 +1,31 @@
+{
+  "our_gstin": "29AABCN4821K1ZA",
+  "issues": {
+    "inv01": [],
+    "inv02": [],
+    "inv03": [],
+    "inv04": [],
+    "inv05": [
+      "INVALID_SUPPLIER_GSTIN"
+    ],
+    "inv06": [
+      "WRONG_TAX_TYPE"
+    ],
+    "inv07": [
+      "TAX_MISMATCH"
+    ],
+    "inv08": [
+      "TOTAL_MISMATCH"
+    ],
+    "inv09": [
+      "DUPLICATE"
+    ],
+    "inv10": [
+      "WRONG_BUYER"
+    ],
+    "inv11": [],
+    "inv12": [
+      "INVOICE_NUMBER_FORMAT"
+    ]
+  }
+}

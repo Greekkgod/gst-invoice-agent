@@ -1,0 +1,27 @@
+{
+  "supplier_name": "Deccan Steel Fixtures LLP",
+  "supplier_gstin": "27AAKFD7720Q1ZT",
+  "buyer_name": "Nilgiri Home Goods Pvt Ltd",
+  "buyer_gstin": "29AABCN4821K1ZA",
+  "invoice_number": "DSF-1187",
+  "invoice_date": "2026-10-05",
+  "place_of_supply_code": "29",
+  "line_items": [
+    {
+      "description": "Steel shelving rack 6ft",
+      "hsn": "9403",
+      "quantity": 12,
+      "unit_price": 6450,
+      "taxable_value": 77400,
+      "gst_rate": 18
+    }
+  ],
+  "totals": {
+    "taxable_value": 77400.0,
+    "cgst": 0.0,
+    "sgst": 0.0,
+    "igst": 13932.0,
+    "round_off": 0.0,
+    "total": 91332.0
+  }
+}
