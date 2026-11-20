@@ -3,6 +3,12 @@
 **Reads purchase invoices with Gemini, checks every GST rule in code, and reconciles them against GSTR-2B,
 so a business claims only the input tax credit (ITC) it can defend.**
 
+![Demo: running the sample batch flags 7 planted problems and Rs 17,190 of ITC at risk](docs/demo.gif)
+
+| Dashboard | GSTR-2B reconciliation |
+|---|---|
+| ![Summary cards and invoice checks](docs/dashboard.png) | ![Reconciliation table with actions](docs/reconciliation.png) |
+
 ## The problem
 
 Every month, Indian businesses collect supplier invoices as PDFs, scans and WhatsApp photos. Someone types
