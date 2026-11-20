@@ -140,3 +140,9 @@ def test_reconcile_counts_duplicate_once():
 def test_gstr2b_missing_columns():
     with pytest.raises(ValueError, match="missing columns"):
         read_gstr2b("supplier_gstin,invoice_number\nX,1\n")
+
+
+def test_no_line_items_fails_closed():
+    inv = invoice(INTRA)
+    inv["line_items"] = []
+    assert codes(check_invoice(inv, BUYER, TODAY)) == ["NO_LINE_ITEMS"]

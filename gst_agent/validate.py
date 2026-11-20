@@ -60,6 +60,9 @@ def check_invoice(inv: dict, our_gstin: str | None = None, today: date | None = 
         add("BAD_DATE", "error", f"Invoice date {inv.get('invoice_date')!r} is not a valid date")
 
     lines = inv.get("line_items") or []
+    if not lines:
+        # Fail closed: without line rates the tax charged cannot be verified.
+        add("NO_LINE_ITEMS", "error", "No line items were extracted, so the tax charged cannot be verified")
     expected_tax = 0.0
     for i, li in enumerate(lines, 1):
         rate = li.get("gst_rate")
